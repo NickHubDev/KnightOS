@@ -13,13 +13,7 @@ start:
   	mov si, data_string
   	call print_string
 
-	call input_process$
-
-get_i_o:
-	mov ah, 00h
-
-input_process:
-	lodsb
+	jmp $
 
 print_string:
 	mov ah, 0Eh
