@@ -5,6 +5,6 @@ QEMU = qemu-system-x86_64
 
 build:
 	$(ASM) -f bin $(SIMPLE_KERNEL) -o simple_k
-	$(QEMU) -drive format=raw,file=/home/nizolax/Proyectos/KnightOS/kernel/simple_k -display gtk
+	$(QEMU) -drive format=raw,file=$(BIN_KERNEL) -display gtk
 clear:
 	rm -rf "simple_k"
